@@ -1,3 +1,53 @@
+# Encrypted TimeSeries
+
+
+## Overview
+
+This project consists of a backend application that performs the following tasks:
+
+1. **Generation and Emission of Encrypted Data Stream:**
+   - The backend application generates encrypted data and emits it over a socket.
+
+2. **Listening to Incoming Data Stream:**
+   - It listens for incoming data stream on a socket.
+
+3. **Decryption and Decoding:**
+   - Upon receiving the data stream, the backend application decrypts and decodes it.
+
+4. **Saving to Time Series Database:**
+   - The decoded data is then saved to a time series database.
+
+5. **Emitting Saved Data to Frontend:**
+   - Finally, the backend emits the saved data to a small frontend application.
+
+## Setup
+
+1. **Dependencies:**
+   - List any dependencies that need to be installed.
+
+2. **Configuration:**
+   - Specify any configuration settings that need to be set, such as database connection details.
+
+## Usage
+
+1. **Running the Backend Application:**
+   - Provide instructions on how to run the backend application.
+
+2. **Setting Up the Frontend Application:**
+   - If applicable, include instructions for setting up and running the frontend application.
+
+## Example
+
+```bash
+# Install dependencies
+npm install
+
+# Set up configuration
+cp config.example.js config.js
+# Modify config.js with your actual configuration
+
+# Run the backend application
+node backend.js
 
 
 ## Emitter Service
